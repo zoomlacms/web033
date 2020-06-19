@@ -1,0 +1,193 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<link href="{$CssDir/}fix.css" rel="stylesheet"/>
+
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/js/jquery.lazyload.js" type="text/javascript"></script>
+<style type="text/css">
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span:hover{ text-decoration:underline;}
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="quqing_top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="{$CssDir/}images/logo.png" alt=""/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{ZL:GetNodeLinkUrl(1)/}">区情首页<span class="sr-only">(current)</span></a></li>
+        <li><a href="{ZL:GetInfoUrl(279)/}">北关概况</a></li>
+        <li><a href="{ZL:GetInfoUrl(278)/}">政府领导</a></li>
+        <li><a href="{ZL:GetNodeLinkUrl(6)/}">图说北关</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="topbanner">
+<div class="container lie_banner">
+<div class="lie_bannerr">
+<div class="media">
+  <div class="media-left">
+    <a href="{ZL:GetInfoUrl(279)/}">
+      <img class="media-object" src="{$CssDir/}images/quqing.jpg" alt="辖区概况">
+      <p></p>
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><a href="{ZL:GetInfoUrl(279)/}">辖区概况</a></br>北关区位于市区东北部，辖9个街道办事处、1个省级高新技术产业开发区（安阳中原高新技术产业开发区），40个社区，34个行政村，总面积54平方公里，总人口25万，其中农业人口3.8万人，耕地面安阳是中国七大古都之一，国家级历史文化名城，是甲骨文的故乡、《周易》的发源地。河南安阳殷墟已经作为世界文化遗产列入《世界遗产名录》。公元前1300年商王盘庚迁都于殷（今安阳市郊小屯一带），经八代十二王，历时254年。中华民族最早使用的文字——甲骨文、世界上最大的青铜器——司母戊大方鼎在这里出土问世。在“中国20世纪100项考古大发现”评选中，安阳殷墟商代晚期都城遗址的发现与发掘名居榜首。积3万亩。</h4>
+    <p><a href="{ZL:GetInfoUrl(279)/}">查看详情</a></p>
+  </div>
+</div>
+</div>
+</div>
+</div><!-- 通栏广告位 -->
+<!--主体开始 -->
+<div class="container quqing_pic">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding0">
+<div class="quqing_pic_r">
+<div class="quqing_pic_rr">
+<img src="{$CssDir/}images/quqing2.jpg" alt="">
+<div class="quqing_pic_rd">
+<p>中国文字博物馆</br>
+<a class="btn btn-default" href="{ZL:GetInfoUrl(194)/}" role="button">点击进入</a></p>
+</div>
+</div>
+<div class="quqing_pic_rr1">
+<img src="{$CssDir/}images/quqing4.jpg" alt="">
+<div class="quqing_pic_rd1">
+<p>袁林 </br>
+<a class="btn btn-default" href="{ZL:GetInfoUrl(6)/}" role="button">点击进入</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding0">
+<div class="quqing_pic_c">
+<div class="quqing_pic_cr">
+<img src="{$CssDir/}images/quqing5.jpg"  alt="">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 quqing_pic_cl padding0">
+<img src="{$CssDir/}images/quqing8.jpg" alt="">
+<div class="quqing_pic_clr">
+<p>袁林 2</br>
+<a class="btn btn-default" href="{ZL:GetInfoUrl(5)/}" role="button">点击进入</a></p>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 quqing_pic_cl1 padding0">
+<img src="{$CssDir/}images/quqing9.jpg" alt="">
+<div class="quqing_pic_clr1">
+<p>袁林 3</br>
+<a class="btn btn-default" href="{ZL:GetInfoUrl(4)/}" role="button">点击进入</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding0">
+<div class="quqing_pic_l">
+<div class="quqing_pic_lr">
+<img src="{$CssDir/}images/quqing7.jpg" alt="">
+<div class="quqing_pic_ld">
+<p>袁林 4</br>
+<a class="btn btn-default" href="{ZL:GetInfoUrl(3)/}" role="button">点击进入</a></p>
+</div>
+</div>
+<div class="quqing_pic_lr1">
+<img src="{$CssDir/}images/quqing10.jpg" alt="">
+<div class="quqing_pic_ld1">
+<p>袁林 5</br>
+<a class="btn btn-default" href="{ZL:GetInfoUrl(2)/}" role="button">点击进入</a></p>
+</div>
+</div>
+<div class="quqing_pic_lr2">
+<img src="{$CssDir/}images/quqing11.jpg" alt="">
+<div class="quqing_pic_ld2">
+<p>袁林 6</br>
+<a class="btn btn-default" href="{ZL:GetInfoUrl(1)/}" role="button">点击进入</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container quqing_di">
+<div class="lie_bannerr">
+<div class="media">
+  <div class="media-left">
+    <a href="{ZL:GetInfoUrl(280)/}">
+      <img class="media-object" src="{$CssDir/}images/quqing.jpg" alt="辖区概况">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><a href="{ZL:GetInfoUrl(280)/}">区位优势</a></br>北关区是安阳市的中心城区和传统的经济、政治、文化、商贸、交通中心，城区经济发展前景广阔，辐射带动能力较强。我区作为安阳市乃至河南省的北大门，地理位置得天独厚，火车站、京港澳高速主出口、汽车站、汽车东站、公交总站均在辖区内，市区四个主要出口占其二，距离邯郸马头机场仅30公里，交通便利；三产发展基础良好，辖区内有两站地区及红旗路、解放大道、人民大道两侧较为完善的商业服务设施，沃尔玛、卫东、国美、美丽华等大型商场，安阳宾馆、飞鹰、速8等高档酒店，赛博、金豪等IT数码广场和众多精品住宅小区星罗棋布，并独有大片工业企业退城进郊遗留厂区，可供商业开发；市政基础成熟完善，有全市密度最大、档次最高的市级教育、医疗卫生、邮电通信等公共服务设施和建设。</h4>
+    <p><a href="{ZL:GetInfoUrl(280)/}">查看详情</a></p>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+ 
+<!--频道首页主体结束 -->
+ 
+{ZL.Label id="全站底部"/}
+</div>
+</body>
+</html>
+<script>
+  $('.code{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+ $(".quqing_pic_rr").mouseover(function(e) {
+    $(this).find(".quqing_pic_rd").show();
+}).mouseout(function(e) {
+    $(this).find(".quqing_pic_rd").hide();
+});;
+ $(".quqing_pic_rr1").mouseover(function(e) {
+    $(this).find(".quqing_pic_rd1").show();
+}).mouseout(function(e) {
+    $(this).find(".quqing_pic_rd1").hide();
+});;
+
+ $(".quqing_pic_cl").mouseover(function(e) {
+    $(this).find(".quqing_pic_clr").show();
+}).mouseout(function(e) {
+    $(this).find(".quqing_pic_clr").hide();
+});;
+ $(".quqing_pic_cl1").mouseover(function(e) {
+    $(this).find(".quqing_pic_clr1").show();
+}).mouseout(function(e) {
+    $(this).find(".quqing_pic_clr1").hide();
+});;
+ $(".quqing_pic_l").mouseover(function(e) {
+    $(this).find(".quqing_pic_ld").show();
+}).mouseout(function(e) {
+    $(this).find(".quqing_pic_ld").hide();
+});;
+ $(".quqing_pic_lr1").mouseover(function(e) {
+    $(this).find(".quqing_pic_ld1").show();
+}).mouseout(function(e) {
+    $(this).find(".quqing_pic_ld1").hide();
+});;
+ $(".quqing_pic_lr2").mouseover(function(e) {
+    $(this).find(".quqing_pic_ld2").show();
+}).mouseout(function(e) {
+    $(this).find(".quqing_pic_ld2").hide();
+});;
+</script>

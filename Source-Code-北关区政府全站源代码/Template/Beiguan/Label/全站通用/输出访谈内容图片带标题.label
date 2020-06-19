@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>864</LabelID>
+    <LabelName>输出访谈内容图片带标题</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,20,1,调用信息数|SynNum,20,1,简介长度|Sponsor,20,1,自定义类型(单位)|Place,20,1,自定义类型(地点)|TitleNum,20,1,标题长度|Guests,20,1,自定义类型(参与)</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_zxft on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_zxft.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_zxft.data,{table1}.dbo.ZL_C_zxft.guests,{table1}.dbo.ZL_C_zxft.pic,{table1}.dbo.ZL_C_zxft.place,{table1}.dbo.ZL_C_zxft.Sponsor,{table1}.dbo.ZL_C_zxft.synopsis</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and Status=99</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="fangt_neir"&gt;
+&lt;div class="media"&gt;
+&lt;div class="media-left"&gt;
+&lt;img class="media-object" src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="Title"/}"&gt;
+&lt;/div&gt;
+&lt;div class="media-body"&gt;
+  &lt;p&gt;访谈日期：{Field="data"/}&lt;/p&gt;
+  &lt;p&gt;访谈嘉宾：{ZL:CutText({Field="guests"/},@Guests,)/}&lt;/p&gt;
+  &lt;p&gt;直播地点：{ZL:CutText({Field="place"/},@Place,)/}&lt;/p&gt;
+  &lt;p&gt;主办单位：{ZL:CutText({Field="Sponsor"/},@Sponsor,)/}&lt;/p&gt;
+&lt;div class="bs_example_r"&gt;
+&lt;div class="bs_example_left"&gt;访谈简介 :&lt;/div&gt;
+&lt;div class="bs-example" data-example-id="embedded-scrollspy"&gt;
+&lt;nav id="navbar-example2" class="navbar navbar-default navbar-static"&gt;
+&lt;div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example"&gt;
+&lt;p&gt;{ZL:CutText({Field="synopsis"/},@SynNum,)/}&lt;/p&gt;
+&lt;/div&gt;     
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Beiguan</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceParam>{"PureT1":"ZL_CommonModel","PureT2":"ZL_C_zxft","T1":"Beiguan.dbo.ZL_CommonModel","T2":"Beiguan.dbo.ZL_C_zxft","JoinType":"left join","OnField1":"ItemID","OnField2":"ID"}</ProceParam>
+  </Table>
+</NewDataSet>

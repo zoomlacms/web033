@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>865</LabelID>
+    <LabelName>输出留言列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>互动标签</LabelCate>
+    <LabelDesc />
+    <LabelParam>TitleNum,20,1,标题长度|ShowNum,20,1,调用信息数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Pub_wlzx</LabelTable>
+    <LabelField>ID,PubAddTime,PubContent,PubTitle,PubUserName</LabelField>
+    <LabelWhere>PubStart=1</LabelWhere>
+    <LabelOrder>PubAddTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;tr class="is-tdcontent"&gt;
+    &lt;td width="158" align="center" style="padding-left: 14px;"&gt;{Field="PubUserName"/}&lt;/td&gt;
+    &lt;td width="468" style="color: rgb(51, 51, 51); padding-left: 40px;"&gt;{ZL:CutText({Field="PubTitle"/},@TitleNum,)/}&lt;/td&gt;
+    &lt;td width="140" align="center"&gt;{ZL:FormatDate({Field="PubAddTime"/},yyyy-MM-dd)/}&lt;/td&gt;
+    &lt;td width="158" align="center"&gt;完成&lt;/td&gt;
+&lt;/tr&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Beiguan</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceParam>{"PureT1":"ZL_Pub_wlzx","PureT2":"","T1":"Beiguan.dbo.ZL_Pub_wlzx","T2":"","JoinType":"left join","OnField1":"answer","OnField2":""}</ProceParam>
+  </Table>
+</NewDataSet>

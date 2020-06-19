@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>855</LabelID>
+    <LabelName>根据留言ID输出留言信息</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>互动标签</LabelCate>
+    <LabelDesc />
+    <LabelParam>PubID,0,1,留言ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Pub_wlzx</LabelTable>
+    <LabelField>ID,lx,PubContent,PubTitle</LabelField>
+    <LabelWhere>ID=@PubID and PubStart=1</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;tr &gt;
+  &lt;td class="col-md-3 col-xs-2 text-right"&gt;标题&lt;/td&gt;&lt;td&gt;&lt;input name="PubTitle" class="form-control text_400" value="{Field="PubTitle"/}" readonly&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class="col-md-3 col-xs-2 text-right"&gt;类型&lt;/td&gt;&lt;td&gt;&lt;input name="lx" class="form-control text_400" value="{Field="lx"/}" readonly&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class="col-md-3 col-xs-2 text-right"&gt;内容&lt;/td&gt;&lt;td&gt;&lt;textarea name="PubContent" rows="6" class="form-control text_400" readonly&gt;{Field="PubContent"/}&lt;/textarea&gt;&lt;/td&gt;
+&lt;/tr&gt; </LabelContent>
+    <LabelCount>0</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Beiguan</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceParam>{"PureT1":"ZL_Pub_wlzx","PureT2":"","T1":"Beiguan.dbo.ZL_Pub_wlzx","T2":"","JoinType":"left join","OnField1":"answer","OnField2":""}</ProceParam>
+  </Table>
+</NewDataSet>

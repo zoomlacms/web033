@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>870</LabelID>
+    <LabelName>循环输出子栏目信息列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>北关专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ParentID,,1,父节点|ShowNum,10,1,显示数|TitleNum,30,1,标题长</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName</LabelField>
+    <LabelWhere>ParentID=@ParentID</LabelWhere>
+    <LabelOrder>OrderID ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"&gt;
+&lt;div class="xin_lier"&gt;
+&lt;div class="xin_lie"&gt;
+&lt;h4&gt;{Field="NodeName"/}&lt;span&gt;&lt;i class="fa fa-arrow-circle-o-right"&gt;&lt;/i&gt;&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}"&gt;更多&lt;/a&gt;&lt;/span&gt;&lt;/h4&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class="list-unstyled"&gt;
+{ZL.Label id="输出指定节点标题_带时间属性" NodeID="{Field="NodeID"/}" TitleNum="@TitleNum" ShowNum="@ShowNum" /}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;{/Repeate}</LabelContent>
+    <LabelCount>0</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Beiguan</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam>{"PureT1":"ZL_Node","PureT2":"","T1":"Beiguan.dbo.ZL_Node","T2":"","JoinType":"left join","OnField1":"AddMoney","OnField2":""}</ProceParam>
+  </Table>
+</NewDataSet>

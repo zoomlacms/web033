@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Proposeinfo, App_Web_4jbyqtwn" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

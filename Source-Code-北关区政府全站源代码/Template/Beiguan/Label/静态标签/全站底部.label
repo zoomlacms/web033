@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>845</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="home_down"&gt;
+&lt;div class="container"&gt;
+&lt;div class="home_down_r"&gt;
+&lt;ul class="list-inline"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(189)/}"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.zoomla.cn/"&gt;RSS订阅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(182)/}"&gt;网站帮助&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(191)/}"&gt;网站声明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(190)/}"&gt;网站地图&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src="{$CssDir/}images/red.png" alt="党政机关"&gt;
+&lt;p&gt;Copyright &amp;copy; 2015 安阳市北关区政府 承办：北关人民政府办公室 版权所有 豫ICP备05020548号&lt;/p&gt;
+&lt;p&gt;地址：河南省安阳市北关区灯塔路166号北关区人民政府&lt;span&gt;邮编:45500&lt;/span&gt;电话：&lt;a href="tel:0372-8888899"&gt;0372-8888899&lt;/a&gt;&lt;span&gt;传真：&lt;a href="tel:0372-3363802"&gt;0372-3363802&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

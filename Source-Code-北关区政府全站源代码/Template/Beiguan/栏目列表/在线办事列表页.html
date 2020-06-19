@@ -1,0 +1,222 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<link href="{$CssDir/}fix.css" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/js/jquery.lazyload.js" type="text/javascript"></script>
+<style type="text/css">
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span:hover{ text-decoration:underline;}
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+.zilie_banner img{ opacity:0.7;}
+.zilie_banner img:hover{ opacity:1; speech-rate:slow;}
+</style>
+</head>
+<body id="header" >
+{ZL.Label id="全站头部"/} 
+<div class="table_bac"> 
+<div class="container thing_content">
+<div class="row padding5">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding10">
+<div class="thing_content_r">
+<div class="thing_content_rt">
+<h2>在线办事</h2>
+</div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          重点领域服务
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      <ul class="lsit-unstyled">
+      {ZL.Label id="输出指定子节点列表" NodeID="61" ShowNum="30" /}
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          企业办事
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+ <ul class="lsit-unstyled">
+ {ZL.Label id="输出指定子节点列表" NodeID="61" ShowNum="30" /}
+ </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          市民办事
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+<ul class="lsit-unstyled">
+{ZL.Label id="输出指定子节点列表" NodeID="61" ShowNum="30" /}
+</ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          场景式服务
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+<ul class="lsit-unstyled">
+{ZL.Label id="输出指定子节点列表" NodeID="88" ShowNum="30" /}
+</ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="thing_content_rr">
+<div class="thing_content_rh">
+<h3>政府信息公开</h3>
+</div>
+<ul class="list-unstyled">
+{ZL.Label id="输出指定子节点列表" NodeID="20" ShowNum="30" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="thing_content_rl">
+<div class="thing_content_rh">
+<h3>最新要闻</h3>
+</div>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="7" TitleNum="30" ShowNum="10" /}
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding10">
+<div class="thing_content_l">
+{ZL.Label id="输出指定子节点列表" NodeID="20" ShowNum="30" /}
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<di 
+</div>
+<!--主体开始 -->
+ 
+
+<!--频道首页主体结束 -->
+ 
+{ZL.Label id="全站底部"/}
+</div>
+</body>
+</html>     
+<script> 
+ var IO=document.getElementById('home_band'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+ $('.node{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+   $('.code{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+         $('.mode{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+		 
+var speed=40 
+var demo=document.getElementById("demo"); 
+var demo2=document.getElementById("demo2"); 
+var demo1=document.getElementById("demo1"); 
+demo2.innerHTML=demo1.innerHTML 
+function Marquee(){ 
+if(demo2.offsetTop-demo.scrollTop<=0) 
+  demo.scrollTop-=demo1.offsetHeight 
+else{ 
+  demo.scrollTop++ 
+} 
+} 
+var MyMar=setInterval(Marquee,speed) 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$('.s_navi').mouseenter(function() {
+	  $('.s_navpic').hide();
+	  $('.s_navlist').show();//you can give it a speed
+	  
+
+	});
+
+	$('.s_navi').mouseleave(function() {
+	  
+		$(this).find('.s_navlist').hide();
+		$('.s_navpic').show();
+	
+	});
+
+   
+});
+
+$().ready(function(e) {
+    $(".nav-tabs>li>a").mouseover(function(){
+		$(this).parent().addClass("active");
+		$(this).parent().siblings("li").removeClass("active");
+		$(this).parent().parent().parent().find(".tab-content .tab-pane").removeClass("active");
+		$($(this).attr("aria-controls")).addClass("active");
+	});
+});
+         $('.cand{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+</script> 
+
+ 

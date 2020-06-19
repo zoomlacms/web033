@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>858</LabelID>
+    <LabelName>输出视频分页列表</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>视频</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|TitleNum,20,1,标题长度|ShowNum,20,1,调用信息数|SynNum,20,1,简介长度</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_video on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_video.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_video.pic,{table1}.dbo.ZL_C_video.synopsis</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and Status=99</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="media"&gt;
+  &lt;div class="media-left"&gt;
+    &lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}"&gt;&lt;/a&gt;
+      &lt;img class="media-object" src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="Title"/} "/&gt;
+  &lt;/div&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}...&lt;/a&gt;&lt;/h4&gt;
+    &lt;p&gt;{ZL:CutText({Field="synopsis"/},@SynNum,)/}&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}"&gt;[查看详情]&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+{/Repeate}
+{ZL.Page id="响应式分页标签"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Beiguan</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceParam>{"PureT1":"ZL_CommonModel","PureT2":"ZL_C_video","T1":"Beiguan.dbo.ZL_CommonModel","T2":"Beiguan.dbo.ZL_C_video","JoinType":"left join","OnField1":"ItemID","OnField2":"ID"}</ProceParam>
+  </Table>
+</NewDataSet>

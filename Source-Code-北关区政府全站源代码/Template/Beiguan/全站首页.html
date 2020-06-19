@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/Template/office/{$CssDir/}images/win8_symbol_140x140.png"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{$SiteName/}_首页</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?id={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+</head>
+</head>
+<body id="home_bac">
+<div class="container home_logo">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_logo_r"><a href="/"><img src="{$LogoUrl/}" alt="{$SiteName/}" /></a></div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_logo_l"><img src="{$CssDir/}images/bac2.png" alt="{$SiteName/}" /></div>
+</div>
+</div> <!-- 头部结束 -->
+<nav class="navbar navbar-default" id="home_band">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand visible-xs" href="/">{$SiteName/}</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+<li class="code31"><a href="{ZL:GetNodeLinkUrl(31)/}"><span class="fa fa-bookmark"></span> 区情</a></li>
+<li class="code4"><a href="{ZL:GetNodeLinkUrl(4)/}"><span class="glyphicon glyphicon-list-alt"></span> 政务</a></li>
+<li class="code1"><a href="{ZL:GetNodeLinkUrl(1)/}"><span class="glyphicon glyphicon-folder-close"></span> 信息</a></li>
+<li class="code36"><a href="{ZL:GetNodeLinkUrl(36)/}"><span class="fa fa-users"></span> 服务</a></li>
+<li class="code91"><a href="{ZL:GetNodeLinkUrl(91)/}"><span class="glyphicon glyphicon-folder-open"></span> 互动</a></li>
+</ul>
+ <form class="navbar-form navbar-right" role="search" action="/Search/SearchList.aspx" method="get" target="_blank">
+<div class="input-group">
+<input type="text" name="keyword" class="form-control" placeholder="请输入关键字">
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit"><span class="fa fa-search"></span></button>
+</span>
+</div>
+</form>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<div class="container home_day">
+<div class="home_day_s">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_day_r padding0">
+<ul class="list-unstyled">
+<li>2015年11月15日<span class="home_day_lir">星期二</span></li>
+<li><a href="#">安阳</a>14℃~6℃ | 空气质量：<span class="home_day_li">良</span></li>
+<li>网站主题：
+<a href="#" class="home_day_li1"></a>
+<a href="#" class="home_day_li2"></a>
+<a href="#" class="home_day_li3"></a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_day_l padding5">
+<ul class="list-unstyled">
+<li><a href="#">中文</a><span>|</span></li>
+<li><a href="#">繁文</a><span>|</span></li>
+<li><a href="#">纯文本</a><span>|</span></li>
+<li><a href="#">WAP版</a><span>|</span></li>
+<li><a href="#">关注微信</a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="container index_banner">
+<div class="row padding10">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding5">
+<div class="index_banner_l">
+<div class="row padding10">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding5 index_banner_ln">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">图文北关<br/><span>NEWS</span></a></li>
+<li role="presentation"><a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab">内容推荐<span>CONTENT</span></a></li>
+<li role="presentation"><a href="#messages1" aria-controls="messages1" role="tab" data-toggle="tab">政策解读<span>POLICY</span></a></li>
+<li role="presentation"><a href="#settings1" aria-controls="settings1" role="tab" data-toggle="tab">专题栏目<span>THEMATIC</span></a></li>
+</ul>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 padding5">
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home1">
+<div class="banner_content_box banner_content_box1">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators"></ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+{ZL.Label id="输出指定节点滚动图" NodeID="7" ShowNum="6" TitleNum="70" /}
+</div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile1">
+<div class="banner_content_box2">
+<h2>内容推荐</h2>
+<ul class="list-unstyled">
+{ZL.Label id="输出指定带点标题" NodeID="20" TitleNum="100" ShowNum="12" /}
+</ul>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="messages1">
+<div class="banner_content_box3">
+<h2>政策解读</h2>
+{ZL.Label id="输出指定略缩图带标题" NodeID="28" TitleNum="40" ShowNum="3" SynNum="180" /}
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="settings1">
+<div class="banner_content_box4">
+<h2>专题栏目</h2>
+<ul class="list-unstyled">
+{ZL.Label id="输出指定带点标题" NodeID="11" TitleNum="100" ShowNum="20" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  padding5">
+<div class="home_pic_l">
+<div role="tabpanel">
+  <!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab">北关要闻</a></li>
+<li role="presentation"><a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab">工作动态</a></li>
+<li role="presentation"><a href="#messages2" aria-controls="messages2" role="tab" data-toggle="tab">公示公告</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home2">
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="83" TitleNum="32" ShowNum="12" /}
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile2">
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="11" TitleNum="32" ShowNum="12" /}
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane" id="messages2">
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="14" TitleNum="32" ShowNum="12" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container home_content">
+<div class="row padding10">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  padding5">
+<div class="home_content_r">
+<div class="home_title"><span><a href="{ZL:GetNodeLinkUrl(4)/}">公共服务</a><br/><b>PUBLIC SERVICE</b></span></div>
+<div role="tabpanel">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#4" aria-controls="home" role="tab" data-toggle="tab">个人办事</a></li>
+<li role="presentation"><a href="#5" aria-controls="profile" role="tab" data-toggle="tab">便民查询</a></li>
+<div class="clearfix"></div>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="4">
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="12" TitleNum="8" ShowNum="12" /}
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane" id="5">
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="13" TitleNum="8" ShowNum="12" /}
+</ul>
+</div>
+
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="home_ban">
+<div class="home_ban_t"><span>在线办事</span></div>
+<ul>
+<li>
+<div class="media">
+<div class="media-left">
+<a href="#">
+<img class="media-object" src="{$CssDir/}images/bac3.png" alt="...">
+</a>
+</div>
+<div class="media-body">
+<h4 class="media-heading"><a href="/User/Login.aspx">我要查询</a></h4>
+<p>在办事过程中有什么不清楚吗<a href="/User/Login.aspx">我要咨询</a></p>
+</div>
+<div class="clearfix"></div>
+</div>
+</li>
+<li>
+<div class="media">
+<div class="media-left"><a href="#"><img class="media-object" src="{$CssDir/}images/bac4.png" alt="..."></a></div>
+<div class="media-body">
+<h4 class="media-heading"><a href="/User/Register.aspx">我要评价</a></h4>
+<p>欢迎办事后对我们的服务进行打分</p>
+</div>
+</div>
+</li>
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="home_yue">
+<div class="home_ban_t"><span>预约服务</span></div>
+<ul>
+<li><a href="{ZL:GetInfoUrl(89)/}">交通出行</a></li>
+<li><a href="{ZL:GetInfoUrl(90)/}">预约诊疗</a></li>
+<li><a href="{ZL:GetInfoUrl(91)/}">查找学校</a></li>
+<li><a href="{ZL:GetInfoUrl(92)/}">婚姻</a></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding5">
+<div class="home_content_c">
+<div class="content_gongkai">
+<div class="home_title"><span><a href="{ZL:GetNodeLinkUrl(4)/}">政府公开</a><br/><b>SERVICE</b></span></div>
+<div class="gongkai_wrap">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home4" aria-controls="home4" role="tab" data-toggle="tab">政府文件</a></li>
+<li role="presentation"><a href="#profile4" aria-controls="profile4" role="tab" data-toggle="tab">重大项目</a></li>
+<li role="presentation"><a href="#messages4" aria-controls="messages4" role="tab" data-toggle="tab">规划计划</a></li>
+<li role="presentation"><a href="#settings4" aria-controls="settings4" role="tab" data-toggle="tab">政府采购</a></li>
+<li role="presentation"><a href="#setting4" aria-controls="settings4" role="tab" data-toggle="tab">行政许可</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<div class="gongkai_list">
+{ZL.Label id="输出指定节点推荐信息列表" NodeID="27" TitleNum="46" ShowNum="1" SysNum="110" /}
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="27" TitleNum="52" ShowNum="5" /}
+</ul>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile4">
+<div class="gongkai_list">
+{ZL.Label id="输出指定节点推荐信息列表" NodeID="18" TitleNum="46" ShowNum="1" SysNum="100" /}
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="18" TitleNum="52" ShowNum="5" /}
+</ul>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="messages4">
+<div class="gongkai_list">
+{ZL.Label id="输出指定节点推荐信息列表" NodeID="11" TitleNum="46" ShowNum="1" SysNum="100" /}
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="11" TitleNum="52" ShowNum="5" /}
+</ul>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="settings4">
+<div class="gongkai_list">
+{ZL.Label id="输出指定节点推荐信息列表" NodeID="12" TitleNum="46" ShowNum="1" SysNum="100" /}
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="12" TitleNum="52" ShowNum="5" /}
+</ul>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="setting4">
+<div class="gongkai_list">
+{ZL.Label id="输出指定节点推荐信息列表" NodeID="26" TitleNum="46" ShowNum="1" SysNum="100" /}
+<ul>
+{ZL.Label id="输出指定节点带省略" NodeID="26" TitleNum="52" ShowNum="5" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div> 
+</div>
+<div class="home_zheng">
+<div class="home_zheng_t"><span>政府信息公开</span></div>
+<div class="home_zheng_m">
+<ul>
+<li><a href="#"><img src="{$CssDir/}images/bac6.png" alt="重点领域"/><span>重点领域<br/>信息公开</span></a></li>
+<li><a href="#"><img src="{$CssDir/}images/bac7.png" alt="权责清单"/><span>市政府<br/>权责清单</span></a></li>
+<li><a href="#"><img src="{$CssDir/}images/bac8.png" alt="重点领域"/><span>政府性基金<br/>目录清单</span></a></li>
+<li><a href="#"><img src="{$CssDir/}images/bac9.png" alt="重点领域"/><span>政务专题</span></a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="home_zheng_d">
+<ul>
+{ZL.Label id="输出指定带点标题" NodeID="20" TitleNum="18" ShowNum="6" /}
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<div class="home_content_l">
+<div class="home_title"><span><a href="{ZL:GetNodeLinkUrl(4)/}">明政互动</a><br/><b>SERVICE</b></span></div>
+<div class="home_dong_r">
+<h3>在线访谈</h3>
+<div class="media">
+<div class="media-left">
+<a href="">2015</a>
+<p>11月7日</p>
+</div>
+<div class="media-body">
+<h4 class="media-heading"><a href="{ZL:GetNodeLinkUrl(5)/}">[本期访谈]</a></h4>
+<p>专访安阳市建设银行行长等嘉宾</p>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="home_dong_r">
+<h3>网上调查</h3>
+<div class="home_dong_rr">
+<p>安阳市居民买房消费问卷调查</p>
+<a class="btn btn-default" href="/User/Register.aspx" role="button">调查数据</a>
+<a class="btn btn-default btn1" href="/User/Register.aspx" role="button">结果反馈</a>
+</div>
+</div>
+<div class="home_dong_r">
+<h3>民意征集</h3>
+<ul class="list-unstylde home_dong_rll">
+{ZL.Label id="输出指定节点带省略" NodeID="25" TitleNum="30" ShowNum="2" /}
+</ul>
+</div>
+<div class="home_biao">
+<ul class="list-unstyled">
+<li><span class="fa fa-envelope-o"></span><p><a href="{ZL:GetNodeLinkUrl(5)/}">市长信箱</a></p></li>
+<li><span class="fa fa-clipboard"></span><p><a href="{ZL:GetNodeLinkUrl(5)/}">纪委监察</a></p></li>
+<li><span class="fa fa-microphone"></span><p><a href="{ZL:GetInfoUrl(301)/}">网上投诉</a></p></li>
+<li><span class="fa fa-calendar"></span><p><a href="{ZL:GetInfoUrl(302)/}">网上信访</a></p></li>
+<li><span class="fa fa-paste"></span><p><a href="{ZL:GetNodeLinkUrl(5)/}">问题解决</a></p></li>
+<li><span class="fa fa-phone-square"></span><p><a href="{ZL:GetInfoUrl(281)/}">市长热线</a></p></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container home_footer">
+<div role="tabpanel">
+<div class="home_footer_t">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+<li role="presentation" class="activel"><span class="glyphicon glyphicon-chevron-right"></span>网站导航</li>
+<li role="presentation" class="active"><a href="#11" aria-controls="profile" role="tab" data-toggle="tab">政府机构导航<span class="fa fa-angle-down"></span></a></li>
+<li role="presentation"><a href="#12" aria-controls="messages" role="tab" data-toggle="tab">友情链接<span class="fa fa-angle-down"></span></a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="11">
+<ul class="list-unstyled tabpanelrr">
+{ZL.Label id="输出指定带点标题" NodeID="26" TitleNum="10" ShowNum="30" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+<div role="tabpanel" class="tab-pane" id="12">
+<ul class="list-unstyled tabpanelr">
+{ZL.Label id="友情链接列表" ShowNum="10" NodeID="27" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="home_down">
+<div class="container">
+<div class="home_down_r">
+<ul class="list-inline">
+<li><a href="{ZL:GetInfoUrl(189)/}">联系我们</a></li>
+<li><a href="https://www.zoomla.cn/">RSS订阅</a></li>
+<li><a href="{ZL:GetInfoUrl(182)/}">网站帮助</a></li>
+<li><a href="{ZL:GetInfoUrl(191)/}">网站声明</a></li>
+<li><a href="{ZL:GetInfoUrl(190)/}">网站地图</a></li>
+</ul>
+<img src="{$CssDir/}images/red.png" alt="党政机关">
+<p>Copyright &copy; 2015 安阳市北关区政府 承办：北关人民政府办公室 版权所有 豫ICP备05020548号</p>
+<p>地址：河南省安阳市北关区灯塔路166号北关区人民政府<span>邮编:45500</span>电话：<a href="tel:0372-8888899">0372-8888899</a><span>传真：<a href="tel:0372-3363802">0372-3363802</a></span></p>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_band'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+ $(function () {
+    $('#myTab a:last').tab('show')
+  })
+$(".index_banner_l .nav li").mouseover(function(){
+	$(this).addClass("active");
+	$(this).siblings("li").removeClass("active");
+	$(".index_banner_l .tab-pane").removeClass("active");
+	$(".index_banner_l "+$(this).find("a").attr("href")).addClass("active");
+})
+$(".carousel-inner .item:first-child").addClass("active");
+</script>

@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>844</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div  id="home_logo"&gt;
+&lt;div class="container home_logo"&gt;
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_logo_r"&gt;
+&lt;a href="/"&gt;&lt;img src="{$CssDir/}images/logo.png" alt=""/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_logo_l"&gt;
+&lt;img src="{$CssDir/}images/bac2.png" alt=""/&gt;
+&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ &lt;!-- 头部结束 --&gt;
+&lt;nav class="navbar navbar-default" id="home_band"&gt;
+&lt;div class="container"&gt;
+ &lt;div class="row"&gt;
+&lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+&lt;div class="navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+&lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+&lt;ul class="nav navbar-nav"&gt;
+&lt;li &gt;&lt;a href="/"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li class="code31"&gt;&lt;a href="{ZL:GetNodeLinkUrl(31)/}"&gt;&lt;span class="fa fa-bookmark"&gt;&lt;/span&gt; 区情&lt;/a&gt;&lt;/li&gt;
+&lt;li class="code4"&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}"&gt;&lt;span class="glyphicon glyphicon-list-alt"&gt;&lt;/span&gt; 政务&lt;/a&gt;&lt;/li&gt;
+&lt;li class="code1"&gt;&lt;a href="{ZL:GetNodeLinkUrl(1)/}"&gt;&lt;span class="glyphicon glyphicon-folder-close"&gt;&lt;/span&gt; 信息&lt;/a&gt;&lt;/li&gt;
+&lt;li class="code36"&gt;&lt;a href="{ZL:GetNodeLinkUrl(36)/}"&gt;&lt;span class="fa fa-users"&gt;&lt;/span&gt; 服务&lt;/a&gt;&lt;/li&gt;
+&lt;li class="code91"&gt;&lt;a href="{ZL:GetNodeLinkUrl(91)/}"&gt;&lt;span class="glyphicon glyphicon-folder-open"&gt;&lt;/span&gt; 互动&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;form class="navbar-form navbar-right" role="search" action="/Search/SearchList.aspx" method="get" target="_blank"&gt;
+&lt;div class="input-group"&gt;
+&lt;input type="text" name="keyword" class="form-control" placeholder="请输入关键字"&gt;
+&lt;span class="input-group-btn"&gt;
+&lt;button class="btn btn-default" type="submit"&gt;&lt;span class="fa fa-search"&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;/span&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;div class=" clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/div&gt; 
+&lt;/nav&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

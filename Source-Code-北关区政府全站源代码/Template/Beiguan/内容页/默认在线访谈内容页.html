@@ -1,0 +1,168 @@
+﻿{ZL.Source id="在线访谈数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>{SField sid="在线访谈数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="在线访谈数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="在线访谈数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body id="home_bac">
+{ZL.Label id="全站头部"/}
+<div class="fang_ban">
+<div class="container fang_ban">
+<div class="fang_ban_r">
+<img src="/Template/Beiguan/style/images/ban-inter.jpg">
+<a class="btn btn-default" role="button" href="/">返回首页</a>
+</div>
+</div>
+<div class="container fang_mySites">
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="在线访谈数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="container is-interbg">
+<div class="is-interbgr">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<div class="fangt_nei">
+<h1>{SField sid="在线访谈数据源标签" FD="Title" page="0"/}</h1>
+<div class="fangt_neir">
+<div class="media">
+<div class="media-left">
+<img class="media-object" src="{ZL:GetPicUrl({SField sid="在线访谈数据源标签" FD="pic" page="0"/})/}" alt="">
+</div>
+<div class="media-body">
+  <p>访谈日期：{SField sid="在线访谈数据源标签" FD="data" page="0"/}</p>
+  <p>访谈嘉宾：{SField sid="在线访谈数据源标签" FD="guests" page="0"/}</p>
+  <p>直播地点：{SField sid="在线访谈数据源标签" FD="place" page="0"/}</p>
+  <p>主办单位：{SField sid="在线访谈数据源标签" FD="Sponsor" page="0"/}</p>
+<div class="bs_example_r">
+<div class="bs_example_left">访谈简介 :</div>
+<div class="bs-example" data-example-id="embedded-scrollspy">
+<nav id="navbar-example2" class="navbar navbar-default navbar-static">
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+<p>{SField sid="在线访谈数据源标签" FD="synopsis" page="0"/}</p>
+</div>     
+</nav>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="fangtan_bac_l">
+<div class="bs-example" data-example-id="embedded-scrollspy">
+<nav id="navbar-example3" class="navbar navbar-default navbar-static">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#fat">部门简介</a></li>
+<li><a href="#mdo">政策解读</a></li> 
+</ul>
+</div>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example">
+<h4 id="fat"><i class="glyphicon glyphicon-envelope"></i>部门简介</h4>
+<p>北关区是安阳市的中心城区和传统的经济、政治、文化、商贸、交通中心，城区经济发展前景广阔，辐射带动能力较强。我区作为安阳市乃至河南省的北大门，地理位置得天独厚，火车站、京港澳高速主出口、汽车站、汽车东站、公交总站均在辖区内，市区四个主要出口占其二，距离邯郸马头机场仅30公里，交通便利；三产发展基础良好，辖区内有两站地区及红旗路、解放大道、人民大道两侧较为完善的商业服务设施，沃尔玛、卫东、国美、美丽华等大型商场，安阳宾馆、飞鹰、速8等高档酒店，赛博、金豪等IT数码广场和众多精品住宅小区星罗棋布，并独有大片工业企业退城进郊遗留厂区，可供商业开发。</p>
+<h4 id="mdo"><i class="glyphicon glyphicon-pencil"></i>政策解读</h4>
+<p>经过20年的发展，我国已经初步建成了较为完善的社会救助体系。目前的社会救助体系包括了城乡居民最低生活保障制度等一系列制度，基本上涵盖了城乡困难家庭在各个方面的需要。其他大多数国家有的社会救助项目，我国基本上都有了。但是，我国社会救助制度在若干方面还存在明显的不足，离满足实际需要还存在一定的差距。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="online_pics_t">
+<div class="online_pics"> 
+<a href="javascript:;" class="pic_btn" id="prev_pic"></a>
+<a href="javascript:;" class="pic_btn" id="next_pic"></a> 
+<div class="show_pics"> 
+<ul class="list-unstyled">
+<script>
+var json='{SField sid="在线访谈数据源标签" FD="pics" page="0"/}';
+var jsonstr=eval(json);
+for(var i=0; i<jsonstr.length; i++){ 
+	document.write("<li><img src=/UploadFiles/"+jsonstr[i].url+" class='img-responsive' alt='"+jsonstr[i].desc+"' /></li>");
+} 
+</script>
+</ul> 
+</div> 
+</div> 
+</div>	
+<div class="fangtan_wen">
+<div class="fangtan_wen_top">
+<h4><span class="fa fa-file-text"></span>文字直播</h4>
+</div>
+<div class="is-break">
+自动刷新间隔：<select id="refresh_time" name="refresh_time" style="vertical-align:middle;" onchange="refreshRecode(this.value)">
+<option value="no" selected="">不刷新</option>
+<option value="15000">15秒</option>
+<option value="30000">30秒</option>
+<option value="60000">1分钟</option>
+<option value="120000">2分钟</option>
+</select> 
+<a href="javascript:;" onclick="document.location.reload()">手工刷新</a>
+</div>
+<div class="clearfix"></div>
+<div class="fangtan_wen_c">
+<div class="bs-example" data-example-id="embedded-scrollspy">
+<nav class="navbar navbar-default navbar-static" id="navbar-example2">
+<div class="scrollspy-example" data-target="#navbar-example2" data-offset="0" data-spy="scroll">
+<p>
+<div class="iframe_comm">
+<iframe id="comm_ifr" scrolling="no" onload="this.height = $(this).contents().height() + 'px';" src="/Comments/CommentFor.aspx?ID={SField sid="在线访谈数据源标签" FD="GeneralID"/}" width="100%" align="middle" height="100%" frameborder="0"></iframe>
+</div>
+</p>
+</div>     
+</nav>
+</div>
+
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+{ZL.Label id="全站底部"/} 
+</body>
+</html>
+ 
+<script>
+
+var moveW=$(".show_pics").find("li").width()+10;
+var leftn=0; //左移个数
+var idname;	//按钮名称
+$(".online_pics .pic_btn").click(function(e) {
+ 	if(moveW*jsonstr.length>$(".show_pics").innerWidth()){
+ 		idname=$(this).attr("id");
+		if(idname=="prev_pic"){ //判断是上一张还是下一张
+			if((jsonstr.length-leftn)*moveW>=$(".show_pics").innerWidth())
+				leftn++;
+		}
+		else{ 
+			 if(leftn>0)
+				leftn--; 
+		}
+		$(".show_pics ul").animate({"margin-left":"-"+leftn*moveW+"px"},500);	  
+
+	} 
+	
+});
+function initCommInfo(div){}
+</script>
+ 

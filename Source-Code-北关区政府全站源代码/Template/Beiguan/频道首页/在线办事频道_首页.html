@@ -1,0 +1,446 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<link href="{$CssDir/}fix.css" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/js/jquery.lazyload.js" type="text/javascript"></script>
+<style type="text/css">
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span:hover{ text-decoration:underline;}
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+.zilie_banner img{ opacity:0.7;}
+.zilie_banner img:hover{ opacity:1; speech-rate:slow;}
+</style>
+</head>
+<body id="header" >
+{ZL.Label id="全站头部"/} 
+<div class="table_bac"> 
+<div class="s_navi">
+<div class="s_navpic" style="display: block;"><img src="{$CssDir/}images/zwnav.png"></div>
+<div class="s_navlist" style="display: none;">
+<div class="snavbox">
+<div><img src="{$CssDir/}images/zwnav2.png"></div>
+<a href="{ZL:GetNodeLinkUrl(47)/}">重点领域</a>
+<a href="{ZL:GetNodeLinkUrl(88)/}" target="_blank">场景服务</a>
+<a href="{ZL:GetNodeLinkUrl(62)/}">市民办事</a>
+<a href="{ZL:GetNodeLinkUrl(61)/}">企业办事</a>
+<a href="{ZL:GetNodeLinkUrl(94)/}">环境质量</a>
+<a href="{ZL:GetNodeLinkUrl(90)/}">住房信息</a>
+<a href="{ZL:GetNodeLinkUrl(91)/}">交通出行</a>
+<a href="{ZL:GetNodeLinkUrl(89)/}">教育考试</a>
+<a href="{ZL:GetNodeLinkUrl(93)/}">保障制度</a>
+</div>
+<div><img src="{$CssDir/}images/navend.png"></div>
+</div>
+</div>
+<div class="container work_top">
+
+</div>
+
+<div class="container work_education">
+<div class="row">
+<div class="padding5">
+<div class="col-lg-9 col-md-9 col-sm-9 col-sm-12 padding10">
+<div class="work_education_r">
+<div class="work_education_s">
+<h1><img src="{$CssDir/}images/zwt1.gif"></h1>
+</div>
+<ul class="is-listfw">
+   <li><a class="list1" href="{ZL:GetNodeLinkUrl(48)/}"></a></li>
+   <li><a class="list2" href="{ZL:GetNodeLinkUrl(50)/}"></a></li>
+   <li><a class="list3" href="{ZL:GetNodeLinkUrl(51)/}"></a></li>
+   <li><a class="list4" href="{ZL:GetNodeLinkUrl(52)/}"></a></li>
+   <li><a class="list5" href="{ZL:GetNodeLinkUrl(53)/}"></a></li>
+   <li><a class="list6" href="{ZL:GetNodeLinkUrl(54)/}"></a></li>
+   <li><a class="list7" href="{ZL:GetNodeLinkUrl(55)/}"></a></li>
+   <li><a class="list8" href="{ZL:GetNodeLinkUrl(49)/}"></a></li>
+   <li><a class="list9" href="{ZL:GetNodeLinkUrl(56)/}"></a></li>
+   <li><a class="list10" href="{ZL:GetNodeLinkUrl(58)/}"></a></li>
+   <li><a class="list11" href="{ZL:GetNodeLinkUrl(59)/}"></a></li>
+   <li><a class="list12" href="{ZL:GetNodeLinkUrl(60)/}"></a></li>
+   <li><a class="list13" href="{ZL:GetNodeLinkUrl(57)/}"></a></li>
+   <div class="clearfix"></div>
+</ul>
+
+</div>
+
+<div class="work_education_rl">
+<div role="tabpanel">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home" aria-controls="#home" role="tab" data-toggle="tab">市民办事</a></li>
+<li role="presentation"><a href="#profile" aria-controls="#profile" role="tab" data-toggle="tab">企业办事</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<ul class="list-unstyled">
+{ZL.Label id="子节点列表" NodeID="62" ShowNum="30" /}
+<div class="clearfix"></div>
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile">
+<ul class="list-unstyled">
+{ZL.Label id="子节点列表" NodeID="61" ShowNum="30" /}
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-sm-12 padding10">
+<div class="work_education_l">
+<ul class="list-inline">
+<li><a href="#"><img src="{$CssDir/}images/rp1.jpg"></a></li>
+<li class="active"><a href="#"><img src="{$CssDir/}images/rp2.jpg"></a></li>
+<li class="activel"><a href="#"><img src="{$CssDir/}images/rp3.jpg"></a></li>
+</ul>
+</div>
+<div class="work_education_lr">
+<p>快速在线查找相关信息。</p>
+<div>
+<input name="type" type="radio" value="service_content" checked=""> 事项查询<br>
+<input name="type" type="radio" value="service_download"> 表格查询</div>
+<div class="is-textbox"><input name="keywords" type="text" class="is-text1" placeholder="-输入查询关键字-"></div>
+<div>
+<input name="" type="submit" value="查询" class="is-btn1"><input name="" type="reset" value="重置" class="is-btn2"></div>
+</div>
+<div class="work_education_ll">
+<p><i class="glyphicon glyphicon-earphone"></i>市长热线<span>2263852</span></p>
+<p><i class="glyphicon glyphicon-phone-alt"></i>维权电话<span>0372-3363801</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container work_server">
+<div class="row">
+<div class="padding5">
+<div class="col-lg-9 col-md-9 col-sm-9 col-sm-12 padding10">
+<div class="work_server_r">
+<ul class="list-unstyled">
+<li><a href="{ZL:GetNodeLinkUrl(89)/}">
+<span class="fa fa-child"><p>教育考试</p></span>
+</span>
+</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(90)/}">
+<span class="fa fa-cc-discover"><p>住房信息</p></span>
+</span>
+</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(91)/}">
+<span class="fa  fa-car"><p>交通出行</p></span>
+</span>
+</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(92)/}">
+<span class="glyphicon glyphicon-credit-card"><p>公共事业</p></span>
+</span>
+</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(93)/}">
+<span class="fa fa-home"><p>社会保障</p></span>
+</span>
+</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(94)/}">
+<span class="glyphicon glyphicon-briefcase"><p>环境质量</p></span>
+</span>
+</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="work_server_rl">
+<div class="work_server_rlr">
+<h3><span class="fa fa-arrow-circle-o-right"></span>办公公示</h3>
+<ul class="list-inline">
+<li><span class="fa fa-file-text-o"></span><a href="#">服务制度</a></li>
+<li><span class="fa fa-line-chart"></span><a href="#">办事指南</a></li>
+<li><span class="fa fa-arrow-circle-o-up"></span><a href="#">在线申报</a></li>
+<li><span class="fa fa-arrow-circle-o-down"></span><a href="#">表格下载</a></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+ <div class="expert_ask_c">
+<div class="expert_ask_m">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr class="is-tdtitle">
+    <td width="98" align="center" style="padding-left: 14px;">编号</td>
+    <td width="298" align="center">标题</td>
+    <td width="100" align="center">受理日期</td>
+    <td width="98" align="center">状态</td>
+  </tr>
+ </tbody></table>
+<div id="demo">
+<div class="list-unstyled" id="demo1">  
+ <table width="100%" style="list-style: none; clear: both; display: block;" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+  {ZL.Label id="输出留言列表" TitleNum="36" ShowNum="30" /}
+</tbody></table>
+</div> 
+<div class="list-unstyled" id="demo2">  
+  {ZL.Label id="输出留言列表" TitleNum="36" ShowNum="1" /}
+</tbody></table>
+
+</div>
+</div>  
+</div>
+</div>
+</div>
+<div class="work_server_s">
+<div class="is-leftsearch ym-gl">
+办件查询
+编号:<input type="text" class="is-textstyle" name="shoulibianhao"  maxlength="20" >
+密码:<input type="password" class="is-textstyle" name="shoulimima" id="shoulimima"  >
+<input name="" type="button" value="查询" onclick="shouliCheck();" class="is-btn1">
+</div>
+<div class="work_server_bar">
+<i class="fa fa-align-left"></i>
+</div>
+<div class="work_server_bal">
+<p>本日：</p>
+</div>
+<div class="work_server_balr">
+<p>受理<span>1</span></p>
+<p>办结<span>1</span></p>
+</div>
+<div class="work_server_li">
+    <span class="red">本年：</span>受理<span class="red">6274</span><span class="is-bj">办结</span><span class="red">3943</span>
+    <div><span class="red">本月：</span>受理<span class="red">168</span><span class="is-bj">办结</span><span class="red">118</span></div></div>
+   <div class="clearfix"></div>
+</div>
+<div class="work_server_peo">
+<div class="row padding5">
+<div class="col-lg-9 col-md-9 col-sm-9 col-sm-12 padding10">
+<div class="work_server_peor">
+<div class="work_server_peorr">
+<h3>特殊人群</h3>
+</div>
+<ul class="list-inline">
+<li><a class="node1" href="{ZL:GetNodeLinkUrl(58)/}"></a></li>
+<li><a class="node2" href="{ZL:GetNodeLinkUrl(59)/}"></a></li>
+<li><a class="node3" href="{ZL:GetNodeLinkUrl(60)/}"></a></li>
+<li><a class="node4" href="{ZL:GetNodeLinkUrl(57)/}"></a></li>
+<li><a class="node5" href="{ZL:GetNodeLinkUrl(60)/}"></a></li>
+<li><a class="node6" href="{ZL:GetNodeLinkUrl(57)/}"></a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-sm-12 padding10">
+<div class="work_server_peol">
+<div class="work_server_peorr">
+<h3>绿色通道</h3>
+</div>
+<div class="work_server_peolr">
+<ul class="list-unstyled">
+<li><a href="#"><span class="fa fa-paint-brush"></span>教师</a></li>
+<li><a href="#"><span class="fa fa-medkit"></span>医生</a></li>
+<li><a href="#"><span class="fa fa-gavel"></span>律师</a></li>
+<li><a href="#"><span class="fa fa-user"></span>会计</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-sm-12 padding10">
+<div class="work_server_tim">
+<div class="work_server_timr">
+<h3>农业服务</h3>
+</div>
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="31" TitleNum="35" ShowNum="10" /}
+</ul>
+</div>
+<div class="work_server_timl">
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#1" aria-controls="#1" role="tab" data-toggle="tab">便民查询</a></li>
+    <li role="presentation"><a href="#2" aria-controls="#2" role="tab" data-toggle="tab">电子地图</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="1">
+    <ul class="list-unstyled">
+   <li><a class="tab1" href="#"></a></li>
+   <li><a class="tab2" href="#"></a></li>
+   <li><a class="tab3" href="#"></a></li>
+   <li><a class="tab4" href="#"></a></li>
+   <li><a class="tab5" href="#"></a></li>
+   <li><a class="tab6" href="#"></a></li>
+   <li><a class="tab7" href="#"></a></li>
+   <li><a class="tab8" href="#"></a></li>
+   <li><a class="tab9" href="#"></a></li>
+   <li><a class="tab10" href="#"></a></li>
+   <li><a class="tab11" href="#"></a></li>
+   <li><a class="tab12" href="#"></a></li>
+    </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="2">
+    <img src="{$CssDir/}images/map.jpg" alt="">
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="work_server_timp">
+<a href="#"><img src="{$CssDir/}images/wsbs.gif"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container work_navi">
+<div class="work_navi_r">
+<div class="work_server_peorr">
+<h3>机构服务导航</h3>
+</div>
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#3" aria-controls="#3" role="tab" data-toggle="tab">政府部门</a></li>
+    <li role="presentation"><a href="#4" aria-controls="#4" role="tab" data-toggle="tab">发展计划</a></li>
+    <li role="presentation"><a href="#5" aria-controls="#5" role="tab" data-toggle="tab">重大项目</a></li>
+    <li role="presentation"><a href="#6" aria-controls="#6" role="tab" data-toggle="tab">行政许可</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="3">
+    <div class="bs-example" data-example-id="embedded-scrollspy">
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+      <ul class="list-unstyled">
+      {ZL.Label id="输出指定节点标题_无时间属性" NodeID="26" TitleNum="15" ShowNum="30" /}
+     
+      </ul>
+    </div>
+  </div>
+    
+    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="4">
+    <div class="bs-example" data-example-id="embedded-scrollspy">
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+      <ul class="list-unstyled">
+     {ZL.Label id="输出指定节点标题_无时间属性" NodeID="36" TitleNum="15" ShowNum="30" /}
+     
+      </ul>
+    </div>
+  </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="5">
+    <div class="bs-example" data-example-id="embedded-scrollspy">
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+      <ul class="list-unstyled">
+     {ZL.Label id="输出指定节点标题_无时间属性" NodeID="16" TitleNum="15" ShowNum="30" /}
+      </ul>
+    </div>
+  </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="6">
+    <div class="bs-example" data-example-id="embedded-scrollspy">
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+      <ul class="list-unstyled">
+     {ZL.Label id="输出指定节点标题_无时间属性" NodeID="19" TitleNum="15" ShowNum="30" /}
+      </ul>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+<!--主体开始 -->
+ 
+
+<!--频道首页主体结束 -->
+ 
+{ZL.Label id="全站底部"/}
+</div>
+</body>
+</html>     
+<script> 
+ var IO=document.getElementById('home_band'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+ $('.node{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+   $('.code{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+         $('.mode{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+		 
+var speed=40 
+var demo=document.getElementById("demo"); 
+var demo2=document.getElementById("demo2"); 
+var demo1=document.getElementById("demo1"); 
+demo2.innerHTML=demo1.innerHTML 
+function Marquee(){ 
+if(demo2.offsetTop-demo.scrollTop<=0) 
+  demo.scrollTop-=demo1.offsetHeight 
+else{ 
+  demo.scrollTop++ 
+} 
+} 
+var MyMar=setInterval(Marquee,speed) 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$('.s_navi').mouseenter(function() {
+	  $('.s_navpic').hide();
+	  $('.s_navlist').show();//you can give it a speed
+	  
+
+	});
+
+	$('.s_navi').mouseleave(function() {
+	  
+		$(this).find('.s_navlist').hide();
+		$('.s_navpic').show();
+	
+	});
+
+   
+});
+
+$().ready(function(e) {
+    $(".nav-tabs>li>a").mouseover(function(){
+		$(this).parent().addClass("active");
+		$(this).parent().siblings("li").removeClass("active");
+		$(this).parent().parent().parent().find(".tab-content .tab-pane").removeClass("active");
+		$($(this).attr("aria-controls")).addClass("active");
+	});
+});
+</script> 
+
+ 
